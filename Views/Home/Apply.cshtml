@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Vaccination Application";
+}
+
+<h2>Apply</h2>
+
+<p> Please fill out the required details below</p>
+
+@using (Html.BeginForm("Add", "Home", FormMethod.Post))
+{
+    
+
+    <div class="form-group">
+        <label for="fill">Vaccination type</label>
+        <select class="form-control" name="fill" id="fill">
+            <option value="#ff0000">Influenza</option>
+           
+            <option value="#ffff00">Rotavirus</option>
+            <option value="#40ff00">Chicken Pox</option>
+            
+            <option value="#0000ff">Measles</option>
+          
+        </select>
+    </div>
+
+
+
+}
+
+
